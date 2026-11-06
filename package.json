@@ -1,0 +1,21 @@
+{
+  "name": "fingerprint-poc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "build:client": "tsc -p tsconfig.client.json",
+    "start": "npm run build:client && node src/server/main.ts",
+    "report": "node src/server/report-cli.ts",
+    "typecheck": "tsc -p tsconfig.server.json && tsc -p tsconfig.client.json --noEmit",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2"
+  },
+  "license": "MIT"
+}

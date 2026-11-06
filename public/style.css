@@ -1,0 +1,157 @@
+:root {
+  --accent: #1d4ed8;
+  --accent-text: #ffffff;
+  --surface: #ffffff;
+  --background: #f3f4f6;
+  --text: #111827;
+  --muted: #4b5563;
+  --border: #d1d5db;
+  --radius: 8px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+.theme-b {
+  --accent: #047857;
+}
+
+body {
+  margin: 0;
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.masthead a {
+  color: var(--accent-text);
+  margin-inline-start: 1rem;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.origin {
+  font-weight: 400;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-text);
+  cursor: pointer;
+}
+
+button.secondary {
+  background: var(--surface);
+  color: var(--accent);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  font: inherit;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-block: 0.4rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.notice {
+  padding: 0.5rem 0.75rem;
+  border-inline-start: 4px solid var(--accent);
+  background: var(--background);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  text-align: start;
+  padding: 0.35rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.status-differ td:last-child {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.status-noised td:last-child {
+  color: #92400e;
+  font-weight: 600;
+}
+
+.pair {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+}
+
+.pair h3 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}

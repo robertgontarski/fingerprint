@@ -1,0 +1,10 @@
+node_modules/
+public/js/
+data/
+*.sqlite
+*.sqlite-*
+.env
+.env.*
+!.env.example
+.idea/
+.DS_Store
